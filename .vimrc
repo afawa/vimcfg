@@ -1,3 +1,4 @@
+"for vim8
 syntax on
 set nu
 
