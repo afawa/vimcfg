@@ -18,6 +18,7 @@ Plugin 'Yggdroot/indentLine'
 Plugin 'vim-airline'
 Plugin 'zxqfl/tabnine-vim'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'vim-vdebug/vdebug'
 call vundle#end()            " required
 filetype plugin indent on    " required
 " To ignore plugin indent changes, instead use:
@@ -73,4 +74,6 @@ let g:indentLine_setColors = 0
 let g:gitgutter_max_signs = 500 
 set updatetime=100
 
-:inoremap <c-j><c-k> <esc>
+:inoremap <c-n><c-m> <esc>
+map <c-m><c-n> :w<CR>
+map <c-c> :packadd termdebug<CR>
